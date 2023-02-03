@@ -740,7 +740,7 @@ static char *str_types_map[][2] = {
 	{"Int32", "INT4"},
 	{"UInt32", "INT8"},
 	{"Int64", "INT8"},
-	{"UInt64", "NUMERIC"}, //overflow risk
+	{"UInt64", "NUMERIC"}, // converted from INT8 to NUMERIC to avoid overflow
 	{"Float32", "REAL"},
 	{"Float64", "DOUBLE PRECISION"},
 	{"Decimal", "NUMERIC"},
